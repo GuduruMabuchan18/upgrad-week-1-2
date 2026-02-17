@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Enrollment Form</title>
+</head>
+<body>
+
+<header>
+    <h1>Course Enrollment</h1>
+</header>
+
+<main>
+    <section>
+        <form action="#" method="post">
+
+            <!-- Full Name -->
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <!-- Email -->
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <!-- Course Selection with Datalist -->
+            <p>
+                <label for="course">Select Course:</label><br>
+                <input list="course-list" id="course" name="course" required>
+                
+                <datalist id="course-list">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="Python">
+                    <option value="Data Science">
+                </datalist>
+            </p>
+
+            <!-- Age (Number Input) -->
+            <p>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="16" max="60" required>
+            </p>
+
+            <!-- Skill Level (Range + Meter) -->
+            <p>
+                <label for="skill">Skill Level (Beginner to Advanced):</label><br>
+                <input type="range" id="skill" name="skill" min="0" max="100" value="40">
+            </p>
+
+            <p>
+                <label>Skill Indicator:</label><br>
+                <meter min="0" max="100" value="40">40%</meter>
+            </p>
+
+            <!-- Enrollment Completion Progress -->
+            <p>
+                <label>Enrollment Completion:</label><br>
+                <progress value="70" max="100">70%</progress>
+            </p>
+
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">Enroll Now</button>
+            </p>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Online Learning Platform</p>
+</footer>
+
+</body>
+</html>
